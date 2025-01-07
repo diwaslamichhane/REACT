@@ -10,18 +10,23 @@ function App() {
   return (
     <div>
       <h1>Project Counter</h1>
-      <p>Max count: 10, Min count: 0</p>
       <h3>Current Count: {count}</h3>
 
       <button onClick={()=>{
         if(count < 10){
           setCount(count + 1)
         }
+        else{
+          alert("You cannot go above 10")
+        }
       }}>Increase by 1</button>
 
       <button onClick={()=>{
         if(count > 0){
           setCount(count -1)
+        }
+        else{
+          alert("You cannot go below 0")
         }
       }}>Decrease by 1</button>
     </div>
