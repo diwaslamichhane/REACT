@@ -1,0 +1,1 @@
+Learned How To Install TailwindCSS in a React Project.
