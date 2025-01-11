@@ -1,6 +1,6 @@
-VIRTUAL DOM, FIBER & RECONCILIATION
+# VIRTUAL DOM, FIBER & RECONCILIATION
 
-1. Virtual DOM:
+### 1. Virtual DOM:
 
 - Virtual DOM ia a copy of real DOM that React uses to update the UI efficiently.
 - React compares the old DOM and new virtual DOM and updates only the necessary parts instead of re-rendering the whole DOM.
@@ -8,9 +8,15 @@ VIRTUAL DOM, FIBER & RECONCILIATION
 
 - Example:
 
-    function App() {
-    const [count, setCount] = React.useState(0);
-    return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
-    }
+    function App() {  
+    const [count, setCount] = React.useState(0);  
+    return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;  
+    }  
 
 - When count changes, React updates only the button text instead of re-rendering the whole DOM.
+
+
+### 2. Reconciliation:
+
+- The process of comparing the old Virtual DOM with the new one and updating only the changed parts is known as Reconciliation.
+
