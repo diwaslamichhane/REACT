@@ -20,3 +20,17 @@
 
 - The process of comparing the old Virtual DOM with the new one and updating only the changed parts is known as Reconciliation.
 
+### 3. Fiber:
+
+- React fiber is the reimplementation of React Reconciliation Algorithm. It breaks rendering work into chunks, prioritizing tasks (eg; animation over data updates) for a smooth experience
+
+- Example: If a large list renders while an animation in running, Fiber pauses the rendering to complete the animation first, preventing UI lag.
+
+
+Q. How they improve performance ?
+
+- When we update state or props:
+
+1. Virtual DOM: Identifies what changes,
+2. Reconciliation: Updates only the necessary parts of the real DOM,
+3. Fiber: Schedules and optimizes rendering tasks.
